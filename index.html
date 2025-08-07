@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrift Country - Mode Éthique & Seconde Main</title>
+    <meta name="description" content="Découvrez notre sélection de vêtements de seconde main tendance et éthique. Mode durable pour tous les styles.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <img src="assets/logo.svg" alt="Thrift Country" class="logo">
+                </div>
+                
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link">Accueil</a></li>
+                        <li><a href="#boutique" class="nav__link">Boutique</a></li>
+                        <li><a href="#categories" class="nav__link">Catégories</a></li>
+                        <li><a href="#blog" class="nav__link">Blog</a></li>
+                        <li><a href="#about" class="nav__link">À propos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav__actions">
+                    <button class="search-btn" aria-label="Rechercher">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    
+                    <button class="favorites-btn" aria-label="Favoris">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </button>
+                    
+                    <button class="cart-btn" aria-label="Panier">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-count">0</span>
+                    </button>
+                    
+                    <button class="user-btn" aria-label="Mon compte">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                </div>
+                
+                <button class="mobile-menu-btn" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        Mode <span class="highlight">Éthique</span><br>
+                        Style <span class="highlight">Unique</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        Découvrez notre sélection de vêtements de seconde main tendance. 
+                        Mode durable, style intemporel, impact positif.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#boutique" class="btn btn--primary">Explorer la boutique</a>
+                        <a href="#about" class="btn btn--secondary">Notre mission</a>
+                    </div>
+                </div>
+                
+                <div class="hero__visual">
+                    <div class="hero__image">
+                        <img src="assets/hero-image.jpg" alt="Mode éthique Thrift Country">
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number">10k+</span>
+                            <span class="stat__label">Articles</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">50k+</span>
+                            <span class="stat__label">Clients</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">95%</span>
+                            <span class="stat__label">Satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured" id="boutique">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Nos meilleures ventes</h2>
+                <p class="section__subtitle">Les articles les plus populaires de notre communauté</p>
+            </div>
+            
+            <div class="products__grid">
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="assets/product-1.jpg" alt="Robe vintage">
+                        <button class="favorite-btn" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-card__badges">
+                            <span class="badge badge--new">Nouveau</span>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3>Robe Vintage Floral</h3>
+                        <p class="product-card__price">€45</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--small">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="assets/product-2.jpg" alt="Chemise oversize">
+                        <button class="favorite-btn" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">-20%</span>
+                        </div>
+                    </div>
+                    <div class="product-card__content">
+                        <h3>Chemise Oversize Vintage</h3>
+                        <p class="product-card__price">
+                            <span class="price--old">€35</span>
+                            <span class="price--new">€28</span>
+                        </p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--small">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="assets/product-3.jpg" alt="Jean mom fit">
+                        <button class="favorite-btn" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card__content">
+                        <h3>Jean Mom Fit 90s</h3>
+                        <p class="product-card__price">€32</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--small">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-card__image">
+                        <img src="assets/product-4.jpg" alt="Blazer vintage">
+                        <button class="favorite-btn" aria-label="Ajouter aux favoris">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="product-card__content">
+                        <h3>Blazer Vintage Élégant</h3>
+                        <p class="product-card__price">€55</p>
+                        <div class="product-card__actions">
+                            <button class="btn btn--small">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__cta">
+                <a href="#boutique" class="btn btn--primary">Voir tous les produits</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>Thrift Country</h3>
+                    <p>Votre destination mode éthique et seconde main de qualité.</p>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Boutique</h4>
+                    <ul>
+                        <li><a href="#">Mode Femme</a></li>
+                        <li><a href="#">Mode Homme</a></li>
+                        <li><a href="#">Accessoires</a></li>
+                        <li><a href="#">Chaussures</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4>Aide</h4>
+                    <ul>
+                        <li><a href="#">Guide des tailles</a></li>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p>&copy; 2024 Thrift Country. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

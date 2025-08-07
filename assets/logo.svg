@@ -1,0 +1,37 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cercle extérieur -->
+  <circle cx="100" cy="100" r="95" fill="#000000" stroke="#000000" stroke-width="5"/>
+  
+  <!-- Cercle intérieur -->
+  <circle cx="100" cy="100" r="85" fill="#000000"/>
+  
+  <!-- Globe central -->
+  <circle cx="100" cy="100" r="25" fill="#f5f5dc"/>
+  
+  <!-- Continents du globe -->
+  <path d="M85 95 Q90 85 95 90 Q100 85 105 90 Q110 85 115 95" fill="#000000"/>
+  <path d="M90 100 Q95 95 100 100 Q105 95 110 100" fill="#000000"/>
+  
+  <!-- Anneaux de Saturne -->
+  <ellipse cx="100" cy="100" rx="35" ry="8" fill="none" stroke="#f5f5dc" stroke-width="3"/>
+  <ellipse cx="100" cy="100" rx="45" ry="5" fill="none" stroke="#f5f5dc" stroke-width="2"/>
+  
+  <!-- Texte THRIFT (en haut) -->
+  <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f5f5dc" text-transform="uppercase">THRIFT</text>
+  
+  <!-- Texte COUNTRY (en bas) -->
+  <text x="100" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#f5f5dc" text-transform="uppercase">COUNTRY</text>
+  
+  <!-- SINCE 2024 (gauche) -->
+  <text x="25" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#f5f5dc" transform="rotate(-90 25 85)">SINCE</text>
+  <text x="25" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#f5f5dc" transform="rotate(-90 25 95)">2024</text>
+  
+  <!-- SHOP ONLINE (droite) -->
+  <text x="175" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#f5f5dc" transform="rotate(90 175 85)">SHOP</text>
+  <text x="175" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#f5f5dc" transform="rotate(90 175 95)">ONLINE</text>
+  
+  <!-- Étoiles -->
+  <circle cx="35" cy="70" r="2" fill="#f5f5dc"/>
+  <circle cx="35" cy="80" r="2" fill="#f5f5dc"/>
+  <circle cx="165" cy="120" r="2" fill="#f5f5dc"/>
+</svg> 
