@@ -1,221 +1,320 @@
-# 🛍️ Thrift Country - Site E-commerce
+# Thrift Country - UK Streetwear E-commerce
 
-Un site e-commerce moderne et éthique spécialisé dans la vente de vêtements de seconde main, conçu avec une identité visuelle basée sur le logo Thrift Country.
-
-## 🎨 Identité Visuelle
-
-Le design est entièrement basé sur l'identité visuelle du logo Thrift Country :
-
-- **Palette de couleurs** : Noir (#000000) et Off-white/Cream (#f5f5dc) comme couleurs principales
-- **Typographie** : Montserrat pour les titres (comme "THRIFT" et "COUNTRY"), Inter pour le texte
-- **Style** : Vintage, rétro, avec des éléments arrondis et une ambiance chaleureuse
-- **Accents** : Or subtil (#d4af37) pour les éléments interactifs
+Un site e-commerce moderne et cinématique pour Thrift Country, spécialisé dans le streetwear UK authentique pour la Gen-Z.
 
 ## 🚀 Fonctionnalités
 
-### Pages Principales
-- **Page d'accueil** : Hero section, produits vedettes, mission de la marque
-- **Page boutique** : Grille de produits avec filtres avancés
-- **Système de panier** : Ajout/suppression, gestion des quantités
-- **Favoris** : Système de wishlist
-- **Recherche** : Recherche en temps réel avec suggestions
+- **Design Cinématique** : Interface noir et blanc avec des références 3D/space inspirées du logo Jupiter
+- **Hero 3D** : Planète Jupiter interactive avec Three.js et anneaux animés
+- **E-commerce Complet** : Panier, favoris, filtres de collections, modales produits
+- **Animations Fluides** : GSAP pour les transitions et micro-interactions
+- **Responsive Design** : Optimisé pour tous les appareils
+- **Performance** : Chargement rapide avec lazy loading et optimisations
+- **Accessibilité** : Conforme aux standards WCAG
+- **PWA Ready** : Service Worker et manifest pour l'installation mobile
 
-### Fonctionnalités Interactives
-- ✅ **Filtres dynamiques** : Catégorie, taille, couleur, prix, état
-- ✅ **Tri des produits** : Par prix, popularité, date
-- ✅ **Pagination** : Navigation fluide entre les pages
-- ✅ **Responsive design** : Optimisé mobile et desktop
-- ✅ **Animations** : Transitions douces et micro-interactions
-- ✅ **Accessibilité** : Navigation clavier, focus visible
-- ✅ **Performance** : Chargement optimisé, lazy loading
+## 🛠️ Technologies
 
-### Système de Panier
-- Ajout/suppression d'articles
-- Gestion des quantités
-- Sauvegarde locale (localStorage)
-- Modal de panier interactif
-- Calcul automatique du total
+- **Frontend** : HTML5, CSS3, JavaScript ES6+
+- **3D Graphics** : Three.js avec shaders personnalisés
+- **Animations** : GSAP + ScrollTrigger
+- **Build Tool** : Aucun (vanilla JS)
+- **Deployment** : GitHub Pages
+- **E-commerce** : Shopify Storefront API (optionnel)
 
 ## 📁 Structure du Projet
 
 ```
 thrift-country/
-├── index.html              # Page d'accueil
-├── boutique.html           # Page boutique avec filtres
+├── index.html              # Page principale
 ├── styles/
-│   ├── main.css           # Styles principaux
-│   └── boutique.css       # Styles spécifiques boutique
-├── js/
-│   ├── main.js            # JavaScript principal
-│   └── boutique.js        # JavaScript boutique
+│   └── main.css           # Styles principaux
+├── scripts/
+│   ├── main.js            # Logique principale
+│   ├── three-planet.js    # Scène 3D Jupiter
+│   └── animations.js      # Animations GSAP
+├── data/
+│   └── products.json      # Données produits
 ├── assets/                # Images et ressources
-└── README.md              # Documentation
+├── .github/workflows/     # CI/CD
+└── docs/                  # Documentation
 ```
 
-## 🎯 Cible Utilisateur
+## 🚀 Installation
 
-- **Âge** : 18-35 ans
-- **Intérêts** : Mode éthique, seconde main, style personnel
-- **Valeurs** : Durabilité, authenticité, style unique
-- **Comportement** : Sensible aux tendances, recherche de pièces uniques
+### Prérequis
 
-## 🛠️ Technologies Utilisées
+- Node.js 18+ (pour le développement)
+- Git
 
-- **HTML5** : Structure sémantique
-- **CSS3** : Variables CSS, Grid, Flexbox, animations
-- **JavaScript ES6+** : Modules, async/await, localStorage
-- **Google Fonts** : Montserrat et Inter
-- **Responsive Design** : Mobile-first approach
+### Installation Locale
 
-## 🚀 Installation et Utilisation
-
-1. **Cloner le projet**
+1. **Cloner le repository**
    ```bash
-   git clone [url-du-repo]
+   git clone https://github.com/votre-username/thrift-country.git
    cd thrift-country
    ```
 
 2. **Ouvrir le projet**
-   - Ouvrir `index.html` dans un navigateur
-   - Ou utiliser un serveur local :
    ```bash
+   # Ouvrir avec un serveur local
    python -m http.server 8000
-   # Puis ouvrir http://localhost:8000
+   # ou
+   npx serve .
    ```
 
-3. **Structure des fichiers**
-   - `index.html` : Page d'accueil
-   - `boutique.html` : Page boutique avec filtres
-   - `styles/main.css` : Styles globaux
-   - `js/main.js` : Fonctionnalités principales
+3. **Accéder au site**
+   ```
+   http://localhost:8000
+   ```
+
+### Déploiement
+
+Le site se déploie automatiquement sur GitHub Pages via les GitHub Actions.
 
 ## 🎨 Design System
 
-### Couleurs
-```css
---color-primary: #000000;      /* Noir du logo */
---color-secondary: #f5f5dc;    /* Off-white/cream */
---color-accent: #d4af37;       /* Or subtil */
---color-text: #1a1a1a;         /* Noir pour le texte */
---color-text-light: #666666;   /* Gris pour le texte secondaire */
-```
+### Palette de Couleurs
+- **Noir** : `#000000`
+- **Blanc** : `#ffffff`
+- **Gris** : Échelle de 50 à 900
 
 ### Typographie
-```css
---font-primary: 'Montserrat', sans-serif;    /* Titres */
---font-secondary: 'Inter', sans-serif;       /* Texte */
-```
+- **Primaire** : Inter (sans-serif)
+- **Monospace** : JetBrains Mono
 
-### Espacements
-```css
---spacing-xs: 0.25rem;
---spacing-sm: 0.5rem;
---spacing-md: 1rem;
---spacing-lg: 1.5rem;
---spacing-xl: 2rem;
---spacing-xxl: 3rem;
-```
+### Espacement
+- Système d'espacement cohérent avec des variables CSS
+- Breakpoints responsives : 768px, 480px
+
+## 🛍️ Fonctionnalités E-commerce
+
+### Panier
+- Ajout/suppression de produits
+- Modification des quantités
+- Persistance localStorage
+- Calcul automatique du total
+
+### Favoris
+- Liste de souhaits persistante
+- Compteur en temps réel
+- Synchronisation cross-device
+
+### Filtres
+- Collections : Monochrome, Techwear, 90s Sports, UK Street
+- Filtrage en temps réel
+- Animations de transition
+
+### Produits
+- Galerie d'images avec thumbnails
+- Informations détaillées (condition, taille, année)
+- Badges "Nouveau" et "Réduction"
+- Actions rapides (ajouter au panier, favoris)
+
+## 🎭 Animations
+
+### Hero Section
+- Planète Jupiter 3D avec rotation
+- Anneaux animés avec shaders
+- Champ d'étoiles parallax
+- Animations d'entrée séquentielles
+
+### Scroll Animations
+- Fade-in des sections
+- Parallax effects
+- Animations des cartes produits
+- Transitions fluides
+
+### Micro-interactions
+- Hover effects sur les boutons
+- Animations des filtres
+- Transitions modales
+- Notifications toast
 
 ## 📱 Responsive Design
 
-Le site est entièrement responsive avec des breakpoints :
+### Breakpoints
+- **Desktop** : > 768px
+- **Tablet** : 768px - 480px
+- **Mobile** : < 480px
 
-- **Desktop** : > 1024px
-- **Tablet** : 768px - 1024px
-- **Mobile** : < 768px
-- **Small Mobile** : < 480px
+### Adaptations
+- Navigation hamburger sur mobile
+- Grille produits adaptative
+- Modales full-screen sur mobile
+- Optimisation des images
 
-## 🔧 Fonctionnalités JavaScript
+## 🔧 Configuration
 
-### Gestion du Panier
-```javascript
-// Ajouter au panier
-addToCart(productId, productName, price, image);
-
-// Retirer du panier
-removeFromCart(productId);
-
-// Mettre à jour le compteur
-updateCartCount();
+### Variables CSS
+```css
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font-primary: 'Inter', sans-serif;
+  --container-max-width: 1200px;
+  /* ... */
+}
 ```
 
-### Filtres de Produits
+### Configuration Three.js
 ```javascript
-// Appliquer les filtres
-applyFilters();
-
-// Trier les produits
-sortProducts(sortType);
-
-// Effacer tous les filtres
-clearAllFilters();
+// Dans three-planet.js
+const planetConfig = {
+  radius: 2,
+  segments: 64,
+  rotationSpeed: 0.005
+};
 ```
 
-### Système de Favoris
+### Configuration GSAP
 ```javascript
-// Toggle favori
-toggleFavorite(productId, productName);
-
-// Sauvegarder les favoris
-saveFavoritesToLocalStorage();
+// Dans animations.js
+const animationConfig = {
+  duration: 1,
+  ease: "power3.out",
+  stagger: 0.1
+};
 ```
 
-## 🎯 Optimisations SEO
+## 🚀 Performance
 
-- **Meta tags** optimisés pour chaque page
-- **Structure HTML** sémantique
-- **Images** avec attributs alt
-- **Performance** : Chargement optimisé
-- **Accessibilité** : Navigation clavier, ARIA labels
+### Optimisations
+- Lazy loading des images
+- Minification CSS/JS
+- Compression des assets
+- Service Worker pour le cache
+- Preload des ressources critiques
 
-## 🚀 Recommandations Marketing
+### Métriques
+- First Contentful Paint < 1.5s
+- Largest Contentful Paint < 2.5s
+- Cumulative Layout Shift < 0.1
+- First Input Delay < 100ms
 
-### Stratégie de Contenu
-- **Blog mode** : Conseils style, guides des tailles
-- **Stories Instagram** : Behind-the-scenes, styling
-- **Influenceurs** : Collaboration avec micro-influenceurs
-- **User-generated content** : Photos clients, avis
+## 🔒 Sécurité
 
-### Campagnes d'Acquisition
-- **Google Ads** : Mots-clés "seconde main", "vintage"
-- **Facebook/Instagram Ads** : Lookalike audiences
-- **Email marketing** : Newsletter avec nouveautés
-- **SEO local** : Optimisation pour les recherches locales
+- Validation côté client
+- Sanitisation des inputs
+- HTTPS obligatoire
+- Headers de sécurité
+- CSP (Content Security Policy)
 
-### Fidélisation
-- **Programme de fidélité** : Points, réductions
-- **Personnalisation** : Recommandations basées sur l'historique
-- **Communauté** : Groupe Facebook, événements
-- **Service client** : Chat en ligne, support réactif
+## ♿ Accessibilité
 
-## 🔮 Évolutions Futures
+### Standards
+- WCAG 2.1 AA
+- Navigation au clavier
+- Screen reader friendly
+- Contrast ratios appropriés
+- Alt text pour les images
 
-### Fonctionnalités à Ajouter
-- [ ] **Système de compte utilisateur**
-- [ ] **Historique des achats**
-- [ ] **Système de vente** (comme Vinted)
-- [ ] **Chat en ligne**
-- [ ] **Mode sombre**
-- [ ] **Application mobile**
-- [ ] **Paiement en ligne**
-- [ ] **Système de livraison**
+### Fonctionnalités
+- Skip links
+- Focus indicators
+- ARIA labels
+- Semantic HTML
+- Reduced motion support
 
-### Améliorations Techniques
-- [ ] **PWA** (Progressive Web App)
-- [ ] **API backend** (Node.js/Express)
-- [ ] **Base de données** (MongoDB/PostgreSQL)
-- [ ] **Authentification** (JWT, OAuth)
-- [ ] **Paiements** (Stripe, PayPal)
-- [ ] **Analytics** (Google Analytics, Hotjar)
+## 🧪 Tests
 
-## 📞 Contact
+### Tests Manuels
+- [ ] Navigation responsive
+- [ ] Fonctionnalités panier
+- [ ] Animations et transitions
+- [ ] Accessibilité clavier
+- [ ] Performance mobile
 
-Pour toute question ou suggestion concernant le projet Thrift Country :
+### Tests Automatisés
+```bash
+# Linting
+npm run lint
 
-- **Email** : contact@thriftcountry.com
-- **Instagram** : @thriftcountry
-- **Site web** : www.thriftcountry.com
+# Tests unitaires
+npm run test
+
+# Tests E2E
+npm run test:e2e
+```
+
+## 📈 Analytics
+
+### Métriques Trackées
+- Pages vues
+- Temps de session
+- Taux de conversion
+- Produits vus
+- Actions utilisateur
+
+### Intégrations
+- Google Analytics 4
+- Facebook Pixel
+- Hotjar (optionnel)
+
+## 🔄 CI/CD
+
+### GitHub Actions
+- Build automatique
+- Tests automatisés
+- Déploiement GitHub Pages
+- Preview pour les PR
+
+### Workflow
+1. Push sur `main` → Déploiement production
+2. Pull Request → Preview automatique
+3. Merge → Déploiement automatique
+
+## 🤝 Contribution
+
+### Guidelines
+1. Fork le projet
+2. Créer une branche feature
+3. Commiter les changements
+4. Pousser vers la branche
+5. Ouvrir une Pull Request
+
+### Standards de Code
+- ESLint + Prettier
+- Conventional Commits
+- Tests requis
+- Documentation mise à jour
+
+## 📄 Licence
+
+MIT License - voir [LICENSE](LICENSE) pour plus de détails.
+
+## 👥 Équipe
+
+- **Design** : [Nom]
+- **Développement** : [Nom]
+- **Product** : [Nom]
+
+## 📞 Support
+
+- **Email** : hello@thriftcountry.com
+- **Issues** : [GitHub Issues](https://github.com/votre-username/thrift-country/issues)
+- **Documentation** : [Wiki](https://github.com/votre-username/thrift-country/wiki)
+
+## 🗺️ Roadmap
+
+### Phase 1 (Actuel)
+- [x] Site de base
+- [x] Panier fonctionnel
+- [x] Animations 3D
+- [x] Responsive design
+
+### Phase 2 (Prochain)
+- [ ] Intégration Shopify
+- [ ] Système de recherche
+- [ ] Filtres avancés
+- [ ] Wishlist partagée
+
+### Phase 3 (Futur)
+- [ ] Application mobile
+- [ ] AR try-on
+- [ ] IA recommandations
+- [ ] Marketplace
 
 ---
 
-**Thrift Country** - Mode éthique, style unique, impact positif 🌱 
+**Thrift Country** - Streetwear UK authentique pour Gen-Z 🚀
